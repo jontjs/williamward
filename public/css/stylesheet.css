@@ -1,0 +1,138 @@
+html *{
+    font-family: 'Roboto', sans-serif;
+}
+
+#main_header {
+    color: darkblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Employee form */
+#employees_h2 {
+    color: #346b8f;
+    font-size: 21px;
+    text-shadow: #222222;
+    text-align: center;
+    padding: 10px;
+}
+
+#form_content {
+    background: #def2f9;
+    margin-right: 32%;
+    margin-left: 32%;
+    padding: 2px;
+    height: 330px;
+}
+
+#form {
+    margin-left: 10%    ;
+}
+
+#form_dob {
+    color: lightgray;
+    width: 50px;
+}
+
+#form input {
+    height: 35px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    vertical-align:middle;
+    margin-left:30px;
+    border: 1px solid #00a9c3;
+    padding: 10px 10px    ;
+    box-sizing: border-box;
+}
+
+#form label {
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+    height: 10%;
+    color: #346b8f;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#form_save {
+    background: #f35923;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    margin-left:170px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: left;
+}
+
+
+#alert {
+    text-align: center;
+    color: forestgreen;
+    font-size: 25px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    /*Shrink page when page width reaches 600px*/
+    #form_content{
+        width: 100%;
+        margin-top: 0;
+        height: 450px;
+        clear: both;
+        float: left;
+    }
+    
+    #form_save{
+        clear: both;
+        margin: auto 0;
+        float: left;
+    ;
+    }
+}
+
+/* Employee Data Table */
+
+#employee_table {
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    color: #124f7b;
+    font-weight: bold;
+}
+
+#employee_table td, #employee_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#employee_table tr:nth-child(even){
+    background-color: #def2f9;
+}
+
+#employee_table tr:hover {
+    background-color: #ddd;
+}
+
+#employee_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #124f7b;
+    color: #57b9de;
+}
+

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TJS{% endblock %}
+
+{% block body %}
+
+        <h1 id="main_header">TJS Task</h1>
+        <a href="/TJs/public/index">Go Back</a>
+
+
+        {% for message in app.flashes('info') %}
+                <div id="alert">
+                        {{ message }}
+                </div>
+        {% endfor %}
+
+        <div id="form_content">
+                <h2 id="employees_h2">Employees</h2>
+                {{ form_start(form, {'attr': {'id': 'employee_form'}}) }}
+                {{ form(form) }}
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
+        </div>
+
+{% endblock %}
