@@ -14,7 +14,7 @@ class EmployeeController extends AbstractController
      * @Route("/employees", name="employees")
      */
     public function index()
-    {
+    { 
         $entityManager = $this->getDoctrine()->getManager();
 
         $employees = new employees();
