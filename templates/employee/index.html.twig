@@ -4,6 +4,6 @@
 
 {% block body %}
     <h1>HomePage</h1>
-    <a href="/TJs/public/form">Add employee</a>
-    <a href="/TJs/public/employeesData">View Employee Data</a>
+    <a href="{{ url('new_employee') }}">Add employee</a>
+    <a href="{{ url('employees_show') }}">View Employee Data</a>
 {% endblock %}

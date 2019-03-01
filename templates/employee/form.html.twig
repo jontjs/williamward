@@ -5,7 +5,7 @@
 {% block body %}
 
         <h1 id="main_header">TJS Task</h1>
-        <a href="/TJs/public/index">Go Back</a>
+        <a href="{{ url('index') }}">Go Back</a>
 
 
         {% for message in app.flashes('info') %}
